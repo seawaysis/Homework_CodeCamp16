@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .login_form{
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px #ddd, 0 8px 16px #ddd;
+            background-color: #fff;
+            padding:5px;
+            text-align: center;
+        }
+        .login_form input{
+            border-radius: 5px;
+            width: 90%;
+            height: 50px;
+            margin: 10px auto;
+            padding-left:10px;
+            display: block;
+            font-size: 20px;
+            color:#1d2129;
+            border: 1px solid #dddfe2;
+        }
+        .login_form input:focus{
+            border: 1px solid blue;
+        }
+        .btn-submit{
+            display: block;
+            border-radius: 5px;
+            width: 90%;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px auto;
+            color:white;
+            background-color: #1877f2;
+            border:0px;
+        }
+        .forgot_pass{
+            color:#1877f2;
+            margin:20px auto;
+        }
+        .bound_line{
+            color:gray;
+        }
+        .btn-new{
+            border-radius: 5px;
+            width: 40%;
+            height: 50px;
+            margin: 10px auto;
+            font-size: 20px;
+            font-weight: bold;
+            color:white;
+            background-color: #42b72a;
+            border:0px;
+        }
+        .create_page p{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .create_page a{
+            font-weight: bold;
+            color:#000;
+            text-decoration-line:none;
+        }
+        @media (min-width:900px) {
+            .face_all{
+                height: 70vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .face_left{
+                width: 500px;
+                justify-content: left;
+            }
+            .face_right{
+                width: 400px;
+                padding:20px;
+            }
+            .footer{
+                position:fixed;
+                width: 100%;
+                height:150px;
+                bottom:0;
+                background-color: #fff;
+                padding:20px 10px;
+                color:#737373;
+            }
+            .fb_logo{
+                display: block;
+                width: 300px;
+            }
+            .description{
+                display: block;
+                width: 400px;
+                padding-left: 30px;
+                padding-bottom: 130px;
+                font-size: 1.8rem;
+            }
+            .box-footer{
+                width: 1200px;
+                margin:0 auto;
+            }
+            .box-footer hr{
+                width:100%;
+                text-align:left;
+            }
+            .footer ul{
+                padding:0;
+                display: flex;
+                justify-content: left;
+                flex-wrap: wrap;
+                list-style-type: none;
+            }
+            .footer ul li{
+                color:#8a8d91;
+                line-height: 1.6;
+                padding-right: 20px;
+                font-size: 14px;
+            }
+        }
+        @media (max-width:900px) {
+            .face_all{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .face_left{
+                width: 500px;
+                text-align: left;
+            }
+            .face_right{
+                width: 400px;
+                padding:20px;
+            }
+            .footer{
+                position:relative;
+                width: 100%;
+                bottom:0;
+                background-color: #fff;
+                padding:20px 10px;
+                margin:0;
+                color:#737373;
+            }
+            .fb_logo{
+                display: block;
+                margin: 0 auto;
+                width: 60%;
+            }
+            .description{
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                width: 80%;
+                font-size: 1.5rem;
+            }
+            .box-footer{
+                margin:0 auto;
+            }
+            .box-footer hr{
+                width:90%;
+                text-align:center;
+                margin-left:20px;
+            }
+            .footer ul{
+                padding:0 20px;
+                display: flex;
+                justify-content: left;
+                flex-wrap: wrap;
+                list-style-type: none;
+            }
+            .footer ul li{
+                color:#8a8d91;
+                line-height: 1.6;
+                padding-right: 20px;
+                font-size: 14px;
+            }
+            .copyright{
+                padding-right: 20px;
+                margin:20px 20px;
+            }
+        }
+        .footer ul li a{
+            color:#737373;
+            text-decoration-line:none;
+        }
+        .footer ul li a:hover{
+            color:#737373;
+            text-decoration-line:underline;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="face_all">
+    <div class="face_left">
+        <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+        <div class="description">Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</div>
+    </div>
+    <div class="face_right">
+        <div class="login_form">
+            <input type="email" name="user" placeholder="อีเมลล์หรือหมายเลขโทรศัพท์มือถือ"/>
+            <input type="password" name="pass" placeholder="รหัสผ่าน" />
+            <button class="btn-submit">เข้าสู่ระบบ</button> 
+            <div class="forgot_pass"><a herf="">ลืมรหัสผ่านใช่หรือไม่</a></div>
+            <hr class="bound_line">
+            <button class="btn-new">สร้างบัญชีใหม่</button> 
+        </div>
+        <div class="create_page">
+            <p><a href="#">สร้างเพจ</a> สำหรับคนดัง แบรนด์ หรือธุรกิจ</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="box-footer">
+    <ul>
+        <li><a href="#">ภาษาไทย</a></li>
+        <li><a>English (UK)</a></li>
+        <li><a>日本語</a></li>
+        <li><a>中文(简体)</a></li>
+        <li><a>Tiếng Việt</a></li>
+        <li><a>Français (France)</a></li>
+        <li><a>Deutsch</a></li>
+        <li><a>Русский</a></li>
+        <li><a>Español</a></li>
+        <li><a>Português (Brasil)</a></li>
+        <li><a>Italiano</a></li>
+    </ul>
+    <hr>
+    <ul>
+        <li><a>สมัคร</a></li>
+        <li><a>เข้าสู่ระบบ</a></li>
+        <li><a>Messenger</a></li>
+        <li><a>Facebook Lite</a></li>
+        <li><a>วิดีโอ</a></li>
+        <li><a>สถานที่</a></li>
+        <li><a>เกม</a></li>
+        <li><a>Marketplace</a></li>
+        <li><a>Meta Pay</a></li>
+        <li><a>Meta Store</a></li>
+        <li><a>Meta Quest</a></li>
+        <li><a>Instagram</a></li>
+        <li><a>Threads</a></li>
+        <li><a>โครงการระดมทุน</a></li>
+        <li><a>บริการศูนย์ข้อมูลการลงคะแนนเสียง</a></li>
+        <li><a>นโยบายความเป็นส่วนตัว</a></li>
+        <li><a>ศูนย์ความเป็นส่วนตัว</a></li>
+        <li><a>กลุ่ม</a></li>
+        <li><a>เกี่ยวกับ</a></li>
+        <li><a>สร้างโฆษณา</a></li>
+        <li><a>สร้างเพจ</a></li>
+        <li><a>ผู้พัฒนา</a></li>
+        <li><a>ร่วมงานกับ Facebook</a></li>
+        <li><a>คุกกี้</a></li>
+        <li><a>ตัวเลือกโฆษณา</a></li>
+        <li><a>เงื่อนไข</a></li>
+        <li><a>ความช่วยเหลือ</a></li>
+        <li><a>การอัพโหลดผู้ติดต่อและผู้ที่ไม่ได้ใช้บริการ</a></li>
+    </ul>
+    <div class="copyright">
+        <span>Meta © 2023</span>
+    </div>
+</div>
+</div>
+</body>
+</html>
